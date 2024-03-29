@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+    <title>BCR | Binar Car Rental</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="/assets/css/styles.css" />
@@ -21,7 +21,9 @@
   </head>
   <body>
     <!-- Header Nav -->
-    <nav class="start-0 top-0 z-20 flex w-full justify-center bg-hero">
+    <nav
+      class="start-0 top-0 z-20 flex w-full justify-center bg-hero mb-20 fixed"
+    >
       <div class="container md:w-3/4 w-11/12">
         <div class="my-8 flex h-9 items-center justify-between py-4">
           <div class="bg-darkblue-4 h-9 w-[100px]"></div>
@@ -91,7 +93,7 @@
       </div>
     </menu>
     <!-- Main -->
-    <main class="space-y-20 container">
+    <main class="space-y-20 container mt-20">
       <!-- Hero section -->
       <section id="hero" class="bg-hero pt-20 md:pt-0">
         <div class="relative h-80 md:h-[500px]">
@@ -270,6 +272,7 @@
               <p class="text-sm font-light text-black">
                 Berbagai review positif dari para pelanggan kami
               </p>
+
               <div class="slick-carousel">
                 <div
                   class="bg-hero rounded-md md:px-10 px-2 md:py-20 py-10 mx-4"
@@ -657,7 +660,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="md:mt-[150px] mt-[60px] mb-[100px]">
+    <footer class="md:mt-[150px] mt-[60px] mb-[60px]">
       <div class="flex h-full w-full items-center justify-center">
         <div
           class="container md:w-3/4 w-11/12 md:flex block justify-between md:space-y-0 space-y-4"
@@ -746,8 +749,8 @@
           centerMode: true,
           dots: false,
           arrows: false,
-          draggable: false,
-          centerPadding: "400px",
+          draggable: true,
+          centerPadding: "239px",
           slidesToShow: 1,
           responsive: [
             {
@@ -757,6 +760,8 @@
                 centerPadding: "0px",
                 draggable: false,
                 centerMode: false,
+                dots: false,
+                arrows: false,
               },
             },
           ],
